@@ -2,7 +2,7 @@
 
 ### About
 
-MuMuDVB Autobuilding with Crosstool and drone.io to MIPS Arch
+MuMuDVB Autobuilding with Crosstool-ng and drone.io to MIPS Arch
 I only maintain in this repo:
 - Crosstool-ng MIPS Toolchain
 - drone.io autobuild script and related stuff
