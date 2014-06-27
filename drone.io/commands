@@ -59,3 +59,37 @@ cp x-tools/mips-unknown-linux-uclibc/mips-unknown-linux-uclibc/lib/libdvben50221
 cp x-tools/mips-unknown-linux-uclibc/mips-unknown-linux-uclibc/lib/libucsi.so artifacts/libucsi.so
 cp x-tools/mips-unknown-linux-uclibc/mips-unknown-linux-uclibc/lib/libdvbapi.so artifacts/libdvbapi.so
 
+
+# Building mpc85xx OpenWRT package with ipkg-build script
+cd /home/ubuntu/src/github.com/Gorkhaan/mumudvb-mips
+
+mkdir opkgsrc
+mkdir opkgsrc/CONTROL
+mkdir opkgsrc/usr
+mkdir opkgsrc/usr/bin
+mkdir opkgsrc/lib
+
+cp artifacts/libdvbcsa.so.1 opkgsrc/lib/
+cp artifacts/libdvben50221.so opkgsrc/lib/
+cp artifacts/libucsi.so opkgsrc/lib/
+cp artifacts/libdvbapi.so opkgsrc/lib/
+cp artifacts/mumudvb-mips opkgsrc/usr/bin/
+
+cat << 'EOT' > opkgsrc/CONTROL/control
+Package: mumudvb-mips
+Version: 1.0.0-1
+Depends: librt
+License: None
+Maintainer: Dorian OCSOVSZKI <gorkhaan@gmail.com>
+Architecture: ar71xx
+Description:  MuMuDVB-MIPS built with CAM and SCAM support
+ Please check this site for latest updates:
+ https://github.com/Gorkhaan/mumudvb-mips
+EOT
+
+cp opkg/ipkg-build /home/ubuntu/src/github.com/Gorkhaan/mumudvb-mips
+
+bash ipkg-build opkgsrc .
+
+cp mumudvb-mips_1.0.0-1_ar71xx.ipk artifacts/
+
