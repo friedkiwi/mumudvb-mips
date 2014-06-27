@@ -1,6 +1,6 @@
-# MuMuDVB-MIPS
+## MuMuDVB-MIPS
 
-## About
+### About
 
 MuMuDVB Autobuilding with Crosstool and drone.io to MIPS Arch
 I only maintain the Crosstool-ng MIPS Toolchain and the autobuild script on drone.io
@@ -9,7 +9,7 @@ I only maintain the Crosstool-ng MIPS Toolchain and the autobuild script on dron
 ### MuMuDVB with CAM/SCAM support
 `https://drone.io/github.com/Gorkhaan/mumudvb-mips/files/MuMuDVB/src/mumudvb-mips-cam`
 
-### ./configure features
+#### ./configure features
 ```
 MuMuDVB configure results:
 
@@ -21,7 +21,7 @@ Build with ATSC long names support:                 yes
 Build with compatibility for android:                no
 ```
 
-## Download necessary libraries
+### Download necessary libraries
 ```
 https://drone.io/github.com/Gorkhaan/mumudvb-mips/files/artifacts/libucsi.so
 https://drone.io/github.com/Gorkhaan/mumudvb-mips/files/artifacts/libdvben50221.so
@@ -29,7 +29,7 @@ https://drone.io/github.com/Gorkhaan/mumudvb-mips/files/artifacts/libdvbcsa.so.1
 https://drone.io/github.com/Gorkhaan/mumudvb-mips/files/artifacts/libdvbapi.so
 ```
 
-## Manual Setup on OpenWRT
+### Manual Setup on OpenWRT
 ```bash
 root@OpenWrt:~# uname -a
 Linux OpenWrt 3.10.36 #1 Wed Jun 25 04:02:02 UTC 2014 mips GNU/Linux
@@ -47,7 +47,7 @@ scp libucsi.so libdvben50221.so libdvbcsa.so.1 libdvbapi.so root@192.168.123.1:/
 scp mumudvb-mips root@192.168.123.1:/root/
 ```
 
-## IPK package for OpenWRT Barrier Breaker (BB) -= AR71xx only =-
+### IPK package for OpenWRT Barrier Breaker (BB) -= AR71xx only =-
 https://drone.io/github.com/Gorkhaan/mumudvb-mips/files/artifacts/mumudvb-mips_1.0.0-1_ar71xx.ipk
 
 Well known AR71xx routers:
