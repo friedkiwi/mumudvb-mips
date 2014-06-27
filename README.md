@@ -10,7 +10,7 @@ I only maintain in this repo:
 
 ## Download MuMuDVB binary
 ### MuMuDVB with CAM/SCAM support
-`https://drone.io/github.com/Gorkhaan/mumudvb-mips/files/MuMuDVB/src/mumudvb-mips-cam`
+https://drone.io/github.com/Gorkhaan/mumudvb-mips/files/MuMuDVB/src/mumudvb-mips
 
 #### ./configure features
 ```
