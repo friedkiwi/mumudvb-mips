@@ -1,0 +1,5 @@
+artifacts/mumudvb-mips
+artifacts/libdvbcsa.so.1
+artifacts/libucsi.so
+artifacts/libdvbapi.so
+artifacts/libdvben50221.so
