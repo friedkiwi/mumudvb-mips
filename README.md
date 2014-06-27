@@ -9,6 +9,18 @@ I only maintain the Crosstool-ng MIPS Toolchain and the autobuild script on dron
 ### MuMuDVB with CAM/SCAM support
 `https://drone.io/github.com/Gorkhaan/mumudvb-mips/files/MuMuDVB/src/mumudvb-mips-cam`
 
+### ./configure features
+```
+MuMuDVB configure results:
+
+Features
+
+Build with CAM support:                             yes
+Build with SCAM support:                            yes
+Build with ATSC long names support:                 yes
+Build with compatibility for android:                no
+```
+
 ## Download necessary libraries
 ```
 https://drone.io/github.com/Gorkhaan/mumudvb-mips/files/artifacts/libucsi.so
