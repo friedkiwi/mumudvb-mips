@@ -3,7 +3,10 @@
 ### About
 
 MuMuDVB Autobuilding with Crosstool and drone.io to MIPS Arch
-I only maintain the Crosstool-ng MIPS Toolchain and the autobuild script on drone.io
+I only maintain in this repo:
+- Crosstool-ng MIPS Toolchain
+- drone.io autobuild script and related stuff
+- opkg package creation for OpenWRT ar71xx specific systems
 
 ## Download MuMuDVB binary
 ### MuMuDVB with CAM/SCAM support
@@ -48,8 +51,8 @@ scp mumudvb-mips root@192.168.123.1:/root/
 ```
 
 ### IPK package for OpenWRT Barrier Breaker (BB)
-
 **AR71xx only**
+
 https://drone.io/github.com/Gorkhaan/mumudvb-mips/files/artifacts/mumudvb-mips_1.0.0-1_ar71xx.ipk
 
 Well known AR71xx routers:
