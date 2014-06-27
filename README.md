@@ -9,7 +9,7 @@ I only maintain the Crosstool-ng MIPS Toolchain and the autobuild script on dron
 ### MuMuDVB with CAM/SCAM support
 `https://drone.io/github.com/Gorkhaan/mumudvb-mips/files/MuMuDVB/src/mumudvb-mips-cam`
 
-## Download necessary libraries only for CAM/SCAM support
+## Download necessary libraries
 ```
 https://drone.io/github.com/Gorkhaan/mumudvb-mips/files/artifacts/libucsi.so
 https://drone.io/github.com/Gorkhaan/mumudvb-mips/files/artifacts/libdvben50221.so
