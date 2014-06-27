@@ -47,7 +47,9 @@ scp libucsi.so libdvben50221.so libdvbcsa.so.1 libdvbapi.so root@192.168.123.1:/
 scp mumudvb-mips root@192.168.123.1:/root/
 ```
 
-### IPK package for OpenWRT Barrier Breaker (BB) -= AR71xx only =-
+### IPK package for OpenWRT Barrier Breaker (BB)
+
+**AR71xx only**
 https://drone.io/github.com/Gorkhaan/mumudvb-mips/files/artifacts/mumudvb-mips_1.0.0-1_ar71xx.ipk
 
 Well known AR71xx routers:
