@@ -1,5 +1,8 @@
 ## MuMuDVB-MIPS
 
+### Autobuild status
+[![Build Status](https://drone.io/github.com/Gorkhaan/mumudvb-mips/status.png)](https://drone.io/github.com/Gorkhaan/mumudvb-mips/latest)
+
 ### About
 
 MuMuDVB Autobuilding with Crosstool-ng and drone.io to MIPS Arch
